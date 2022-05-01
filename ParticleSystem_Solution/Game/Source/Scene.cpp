@@ -45,21 +45,19 @@ bool Scene::PreUpdate()
 // Called each loop iteration
 bool Scene::Update(float dt)
 {
+	// TODO 4: Shoot lasers when the player hits 1
+
 	if (app->input->GetKey(SDL_SCANCODE_1) == KEY_DOWN)
 	{
 		app->moduleParticles->AddParticle(app->moduleParticles->laser, 300, 400, 0);
 
 	}
-		
+
+	// TODO 5: Make an explosion when the player hits 2
 
 	if (app->input->GetKey(SDL_SCANCODE_2) == KEY_DOWN)
 	{
 		app->moduleParticles->AddParticle(app->moduleParticles->explosion, 300, 400, 0);
-	}
-		
-	if (app->input->GetKey(SDL_SCANCODE_3) == KEY_DOWN)
-	{
-
 	}
 		
 	return true;

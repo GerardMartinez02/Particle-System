@@ -12,7 +12,7 @@ ModuleParticles::ModuleParticles()
 	for(uint i = 0; i < MAX_ACTIVE_PARTICLES; ++i)
 		particles[i] = nullptr;
 
-	// Explosion particle
+	// Explosion Particle
 	explosion.anim.PushBack({ 274, 296, 33, 30 });
 	explosion.anim.PushBack({ 313, 296, 33, 30 });
 	explosion.anim.PushBack({ 346, 296, 33, 30 });
@@ -22,9 +22,7 @@ ModuleParticles::ModuleParticles()
 	explosion.anim.loop = false;
 	explosion.anim.speed = 0.3f;
 
-	// TODO 2:	Create the template for a new particle "laser"
-	//			Remember: not all the code goes here!
-	//			Follow the example with the "explosion" particle
+	// Laser Particle
 	laser.anim.PushBack({ 104, 171, 80, 14 });
 	laser.anim.PushBack({ 185, 170, 80, 16 });
 	laser.speed = iPoint(1, 0);
@@ -65,18 +63,15 @@ bool ModuleParticles::CleanUp()
 
 bool ModuleParticles::Update(float dt)
 {
-	for(uint i = 0; i < MAX_ACTIVE_PARTICLES; ++i)
-	{
-		Particle* particle = particles[i];
+	// TODO 2: Create a loop (for) to iterate all the Particles
 
-		if(particle == nullptr)	continue;
+	for (uint i = 0; i < MAX_ACTIVE_PARTICLES; ++i)
+	{
+		
 
 		// Call particle Update. If it has reached its lifetime, destroy it
-		if(particle->Update() == false)
-		{
-			delete particle;
-			particles[i] = nullptr;
-		}
+		
+
 	}
 
 	return true;
@@ -84,17 +79,9 @@ bool ModuleParticles::Update(float dt)
 
 bool ModuleParticles::PostUpdate()
 {
-	//Iterating all particle array and drawing any active particles
-	for (uint i = 0; i < MAX_ACTIVE_PARTICLES; ++i)
-	{
-		Particle* particle = particles[i];
+	// TODO 3: Create a loop (for) to iterate all the particle array to draw them if any particle is active 
 
-		if (particle != nullptr && particle->isAlive)
-		{
-			app->render->DrawTexture(texture, particle->position.x, particle->position.y, &(particle->anim.GetCurrentFrame()));
-		}
-	}
-
+	
 	return true;
 }
 
@@ -102,10 +89,7 @@ void ModuleParticles::AddParticle(const Particle& particle, int x, int y, uint d
 {
 	Particle* p = new Particle(particle);
 	
-	p->frameCount = -(int)delay;			// We start the frameCount as the negative delay
-	p->position.x = x;						// so when frameCount reaches 0 the particle will be activated
-	p->position.y = y;						
+	// TODO 1: Create the necesary variables for the Particles
 
-	particles[lastParticle++] = p;
-	lastParticle %= MAX_ACTIVE_PARTICLES;
+
 }

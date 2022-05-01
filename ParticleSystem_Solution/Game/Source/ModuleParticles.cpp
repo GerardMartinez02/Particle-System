@@ -12,7 +12,7 @@ ModuleParticles::ModuleParticles()
 	for(uint i = 0; i < MAX_ACTIVE_PARTICLES; ++i)
 		particles[i] = nullptr;
 
-	// Explosion particle
+	// Explosion Particle
 	explosion.anim.PushBack({ 274, 296, 33, 30 });
 	explosion.anim.PushBack({ 313, 296, 33, 30 });
 	explosion.anim.PushBack({ 346, 296, 33, 30 });
@@ -22,9 +22,7 @@ ModuleParticles::ModuleParticles()
 	explosion.anim.loop = false;
 	explosion.anim.speed = 0.3f;
 
-	// TODO 2:	Create the template for a new particle "laser"
-	//			Remember: not all the code goes here!
-	//			Follow the example with the "explosion" particle
+	// Laser Particle
 	laser.anim.PushBack({ 104, 171, 80, 14 });
 	laser.anim.PushBack({ 185, 170, 80, 16 });
 	laser.speed = iPoint(1, 0);
@@ -65,6 +63,8 @@ bool ModuleParticles::CleanUp()
 
 bool ModuleParticles::Update(float dt)
 {
+	// TODO 2: Create a loop (for) to iterate all the particles
+
 	for(uint i = 0; i < MAX_ACTIVE_PARTICLES; ++i)
 	{
 		Particle* particle = particles[i];
@@ -84,7 +84,8 @@ bool ModuleParticles::Update(float dt)
 
 bool ModuleParticles::PostUpdate()
 {
-	//Iterating all particle array and drawing any active particles
+	// TODO 3: Create a loop (for) to iterate all the particle array to draw them if any particle is active 
+
 	for (uint i = 0; i < MAX_ACTIVE_PARTICLES; ++i)
 	{
 		Particle* particle = particles[i];
@@ -102,8 +103,9 @@ void ModuleParticles::AddParticle(const Particle& particle, int x, int y, uint d
 {
 	Particle* p = new Particle(particle);
 	
-	p->frameCount = -(int)delay;			// We start the frameCount as the negative delay
-	p->position.x = x;						// so when frameCount reaches 0 the particle will be activated
+	// TODO 1: Create the necesary variables for the Particles
+			
+	p->position.x = x;						
 	p->position.y = y;						
 
 	particles[lastParticle++] = p;
