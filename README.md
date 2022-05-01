@@ -12,18 +12,24 @@ https://gerardmartinez02.github.io/Particle-System/
 
 ## Key Features
 
- - {Feature01}
- - {Feature02}
- - {Feature03}
- - {Feature04}
+- Being able to implement and create a simple particle system that serves as a base to be able to implement it in any type of project that requires its use.
  
 ## Controls
 
- - {ControlsScheme}
+  - Press 1: Activate Lasser Particle
+ 
+ Looped particle that is destroyed by time
+ 
+ - Press 2: Activate Explosion Particle
+ 
+ Particle that is destroyed at the end of the Anim.
 
 ## Developers
 
-Gerard Martinez
+- Gerard Martinez: https://github.com/GerardMartinez02
+
+## Source
+
 
 ## License
 
