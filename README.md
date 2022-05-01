@@ -4,6 +4,7 @@
 
 This project tries to better understand this important part of creating a video game. Also trying to explain and create one individually with the knowledge obtained.
 In this case, this Particle System has been made with SDL
+
 Visit github page for detailed information regarding code and functionalities:
 
 
