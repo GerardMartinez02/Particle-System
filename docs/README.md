@@ -29,6 +29,22 @@ In this case, we observe the creation and destruction of a particle from its col
 
 Finally we see how there are particles that can be destroyed without having an interaction with a collision or its finalize animation. There are looped particles that can be limited by time.
 
+### Select Aproach
+
+
+
 ### Citations
+
+Information and images:
+
+- https://answers.unity.com/questions/1785183/how-to-make-3-bullets-fire-at-different-angles.html
+- https://blog.udemy.com/how-to-make-a-2d-game-in-unity/
+- https://www.pinterest.es/pin/609745237032901237/
+
+Support library that has served to implement the code:
+
 - [SDL](https://www.libsdl.org/projects/SDL/)
+
+Tempalte used for the module:
+
 - [Code template used as a base for this Audio and music manager construction](https://github.com/raysan5/game_project_template)
