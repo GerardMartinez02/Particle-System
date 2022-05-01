@@ -27,9 +27,10 @@ ModuleParticles::ModuleParticles()
 	//			Follow the example with the "explosion" particle
 	laser.anim.PushBack({ 104, 171, 80, 14 });
 	laser.anim.PushBack({ 185, 170, 80, 16 });
-	laser.speed = iPoint(5, 0);
-	laser.lifetime =
-		laser.anim.speed = 0.3f;
+	laser.speed = iPoint(1, 0);
+	laser.lifetime = 500;
+	laser.anim.loop = true;
+	laser.anim.speed = 0.3f;
 }
 
 ModuleParticles::~ModuleParticles()
@@ -40,7 +41,7 @@ ModuleParticles::~ModuleParticles()
 bool ModuleParticles::Start()
 {
 	LOG("Loading particles");
-	texture = app->tex->Load("Assets/particles.png");
+	texture = app->tex->Load("Assets/Textures/particles.png");
 	
 	return true;
 }

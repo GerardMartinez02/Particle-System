@@ -5,6 +5,7 @@
 #include "Render.h"
 #include "Window.h"
 #include "Scene.h"
+#include "ModuleParticles.h"
 
 #include "Defs.h"
 #include "Log.h"
@@ -44,20 +45,23 @@ bool Scene::PreUpdate()
 // Called each loop iteration
 bool Scene::Update(float dt)
 {
-	if(app->input->GetKey(SDL_SCANCODE_UP) == KEY_REPEAT)
-		app->render->camera.y -= 1;
+	if (app->input->GetKey(SDL_SCANCODE_1) == KEY_DOWN)
+	{
+		app->moduleParticles->AddParticle(app->moduleParticles->laser, 300, 400, 0);
 
-	if(app->input->GetKey(SDL_SCANCODE_DOWN) == KEY_REPEAT)
-		app->render->camera.y += 1;
+	}
+		
 
-	if(app->input->GetKey(SDL_SCANCODE_LEFT) == KEY_REPEAT)
-		app->render->camera.x -= 1;
+	if (app->input->GetKey(SDL_SCANCODE_2) == KEY_DOWN)
+	{
+		app->moduleParticles->AddParticle(app->moduleParticles->explosion, 300, 400, 0);
+	}
+		
+	if (app->input->GetKey(SDL_SCANCODE_3) == KEY_DOWN)
+	{
 
-	if(app->input->GetKey(SDL_SCANCODE_RIGHT) == KEY_REPEAT)
-		app->render->camera.x += 1;
-
-	app->render->DrawTexture(img, 380, 100);
-
+	}
+		
 	return true;
 }
 
