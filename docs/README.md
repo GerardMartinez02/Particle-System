@@ -25,8 +25,9 @@ As it can be observe, here we see one of the most common uses when creating part
 
 In this case, we observe the creation and destruction of a particle from its collision with another object
 
+![170280-sample](https://user-images.githubusercontent.com/73245381/166169124-6daed9cf-9367-4f39-866e-6dc5638e42a7.gif)
 
-
+Finally we see how there are particles that can be destroyed without having an interaction with a collision or its finalize animation. There are looped particles that can be limited by time.
 
 ### Citations
 - [SDL](https://www.libsdl.org/projects/SDL/)
