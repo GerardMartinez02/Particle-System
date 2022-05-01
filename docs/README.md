@@ -14,16 +14,16 @@ In this research the main objective where the following:
 
 Particle Systems are something that has been used practically since the beginning of the creation of games. Thus, being one of the most important things when creating the code of a video game. 
 
-Here I will list a few examples of Particles implemented in videgames. 
+Here I will list a few examples of Particles implemented in videgames: 
 
 
+![888661d64f8155bc81443d54bd5c20a4](https://user-images.githubusercontent.com/73245381/166168938-5b0e4a5d-acf1-4ff5-b4f0-41e7d2e16683.gif)
 
+As it can be observe, here we see one of the most common uses when creating particles in video games, a particle that has a limited life according to its animation.
 
+![2d_ballistic_02](https://user-images.githubusercontent.com/73245381/166168983-dacaaa16-c0b0-4a06-b8dc-ce0686b92338.gif)
 
-
-
-
-
+In this case, we observe the creation and destruction of a particle from its collision with another object
 
 
 
