@@ -21,7 +21,7 @@ Here I will list a few examples of Particles implemented in videgames:
 
 As it can be observe, here we see one of the most common uses when creating particles in video games, a particle that has a limited life according to its animation.
 
-![2d_ballistic_02](https://user-images.githubusercontent.com/73245381/166168983-dacaaa16-c0b0-4a06-b8dc-ce0686b92338.gif)
+![giphy](https://user-images.githubusercontent.com/73245381/166169056-4a7648e1-01ca-41a7-9209-8aedca0df2f0.gif)
 
 In this case, we observe the creation and destruction of a particle from its collision with another object
 
