@@ -1,8 +1,11 @@
-# {Project Name}
+# Particel System
 
 ## Description
 
-{project description}
+This project tries to better understand this important part of creating a video game. Also trying to explain and create one individually with the knowledge obtained.
+In this case, this Particle System has been made with SDL
+Visit github page for detailed information regarding code and functionalities:
+
 
 ## Key Features
 
@@ -17,10 +20,7 @@
 
 ## Developers
 
- - {Dev01} - {Role(s)}
- - {Dev02} - {Role(s)}
- - {Dev03} - {Role(s)}
- - {Dev04} - {Role(s)}
+Gerard Martinez
 
 ## License
 
