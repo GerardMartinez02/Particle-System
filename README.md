@@ -7,6 +7,8 @@ In this case, this Particle System has been made with SDL.
 
 Visit github page for detailed information regarding code and functionalities:
 
+https://gerardmartinez02.github.io/Particle-System/
+
 
 ## Key Features
 
