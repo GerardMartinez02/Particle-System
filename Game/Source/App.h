@@ -13,6 +13,7 @@ class Render;
 class Textures;
 class Audio;
 class Scene;
+class ModuleParticles;
 
 class App
 {
@@ -74,6 +75,7 @@ public:
 	Textures* tex;
 	Audio* audio;
 	Scene* scene;
+	ModuleParticles* moduleParticles;
 
 private:
 
