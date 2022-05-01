@@ -18,7 +18,7 @@ https://gerardmartinez02.github.io/Particle-System/
 
   - Press 1: Activate Lasser Particle
  
- Looped particle that is destroyed by time
+ Looped particle that is destroyed by time.
  
  - Press 2: Activate Explosion Particle
  
