@@ -31,6 +31,9 @@ Finally we see how there are particles that can be destroyed without having an i
 
 ### Select Aproach
 
+For this personal research I have developed some basic particles such as a Bullet and a Explosion in order to visualize its creation and its different characteristics. 
+The interaction of particles with external objects such as a collision has not been taken into account since we are talking about a base particle system. As I said, this are easy particles to implement that work perfectly and that can be used as a basis for future projects.
+
 
 
 ### Citations
