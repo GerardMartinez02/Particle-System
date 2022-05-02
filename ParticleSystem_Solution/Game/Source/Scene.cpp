@@ -49,7 +49,7 @@ bool Scene::Update(float dt)
 
 	if (app->input->GetKey(SDL_SCANCODE_1) == KEY_DOWN)
 	{
-		app->moduleParticles->AddParticle(app->moduleParticles->laser, 150, 400, 0);
+		app->moduleParticles->AddParticle(app->moduleParticles->laser, 150, 350, 0);
 
 	}
 
@@ -57,7 +57,7 @@ bool Scene::Update(float dt)
 
 	if (app->input->GetKey(SDL_SCANCODE_2) == KEY_DOWN)
 	{
-		app->moduleParticles->AddParticle(app->moduleParticles->explosion, 300, 400, 0);
+		app->moduleParticles->AddParticle(app->moduleParticles->explosion, 560, 330, 0);
 	}
 		
 	return true;

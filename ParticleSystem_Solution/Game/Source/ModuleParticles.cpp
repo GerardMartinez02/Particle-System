@@ -13,20 +13,20 @@ ModuleParticles::ModuleParticles()
 		particles[i] = nullptr;
 
 	// Explosion Particle
-	explosion.anim.PushBack({ 274, 296, 33, 30 });
-	explosion.anim.PushBack({ 313, 296, 33, 30 });
-	explosion.anim.PushBack({ 346, 296, 33, 30 });
-	explosion.anim.PushBack({ 382, 296, 33, 30 });
-	explosion.anim.PushBack({ 419, 296, 33, 30 });
-	explosion.anim.PushBack({ 457, 296, 33, 30 });
+	explosion.anim.PushBack({ 818, 884, 50, 50 });
+	explosion.anim.PushBack({ 921, 869, 83, 70 });
+	explosion.anim.PushBack({ 1012, 860, 94, 83 });
+	explosion.anim.PushBack({ 1113, 858, 98, 90 });
+	explosion.anim.PushBack({ 1220, 857, 98, 94 });
+	explosion.anim.PushBack({ 1328, 858, 100, 95 });
 	explosion.anim.loop = false;
 	explosion.anim.speed = 0.005f;
 
 	// Laser Particle
-	laser.anim.PushBack({ 104, 171, 80, 14 });
-	laser.anim.PushBack({ 185, 170, 80, 16 });
+	laser.anim.PushBack({ 302, 494, 246, 47 });
+	laser.anim.PushBack({ 537, 494, 238, 52 });
 	laser.speed = iPoint(1, 0);
-	laser.lifetime = 900;
+	laser.lifetime = 800;
 	laser.anim.loop = true;
 	laser.anim.speed = 0.001f;
 }
