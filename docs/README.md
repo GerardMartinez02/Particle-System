@@ -185,6 +185,6 @@ Support library that has served to implement the code:
 
 - [SDL](https://www.libsdl.org/projects/SDL/)
 
-Tempalte used for the module:
+Template used for the module:
 
 - [Code template used as a base for this Audio and music manager construction](https://github.com/raysan5/game_project_template)
