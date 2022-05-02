@@ -35,6 +35,7 @@ For this personal research I have developed some basic particles such as a Bulle
 The interaction of particles with external objects such as a collision has not been taken into account since we are talking about a base particle system. As I said, this are easy particles to implement that work perfectly and that can be used as a basis for future projects.
 
 First of all, we must take into account the creation of the particles and the implementation of their variables, such as position, animation, speed and lifetime
+
 ```
 void ModuleParticles::AddParticle(const Particle& particle, int x, int y, uint delay)
 {
@@ -130,9 +131,8 @@ bool ModuleParticles::PostUpdate()
 	return true;
 }
 ```
+
 Finally, we will have to change the file of our code and go to the Scene cpp, once inside we will have to implement the logic so that the particles are reflected on the screen once the action has been carried out
-
-
 
 ```
 bool Scene::Update(float dt)
@@ -151,6 +151,17 @@ bool Scene::Update(float dt)
 	return true;
 }
 ```
+### Possible Improvements 
+
+Taking into account the template that has been created, the next step would be to implement the functionality of interaction with other objects, a clear example could be the implementation of particles with an assigned collider to be able to collide with what could be a wall.
+
+What would be needed to take into account many other code files, such as a Module Collisions that has not been taken into account to create this repository.
+
+### Exercise 
+
+Link to the template with the exercise created to test our knowledge of Particle Systems:
+
+Inside it can be observed a series of TODOs in order to complete the template the entire template.  
 
 ### Citations
 
