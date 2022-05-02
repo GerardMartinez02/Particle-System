@@ -23,13 +23,13 @@ As it can be observe, here we see one of the most common uses when creating part
 
 ![giphy](https://user-images.githubusercontent.com/73245381/166169056-4a7648e1-01ca-41a7-9209-8aedca0df2f0.gif)
 
-In this case, we observe the creation and destruction of a particle from its collision with another object
+In this case, we observe the creation and destruction of a particle from its collision with another object.
 
 ![170280-sample](https://user-images.githubusercontent.com/73245381/166169124-6daed9cf-9367-4f39-866e-6dc5638e42a7.gif)
 
 Finally we see how there are particles that can be destroyed without having an interaction with a collision or its finalize animation. There are looped particles that can be limited by time.
 
-### Select Aproach
+### Select Approach
 
 For this personal research I have developed some basic particles such as a Bullet and a Explosion in order to visualize its creation and its different characteristics. 
 The interaction of particles with external objects such as a collision has not been taken into account since we are talking about a base particle system. As I said, this are easy particles to implement that work perfectly and that can be used as a basis for future projects.
