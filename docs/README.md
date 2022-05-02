@@ -161,7 +161,13 @@ What would be needed to take into account many other code files, such as a Modul
 
 Link to the template with the exercise created to test our knowledge of Particle Systems:
 
+https://github.com/GerardMartinez02/Particle-System/tree/main/ParticleSystem_Handout
+
 Inside it can be observed a series of TODOs in order to complete the template the entire template.  
+
+Finally here we have the solution to the exercises: 
+
+https://github.com/GerardMartinez02/Particle-System/tree/main/ParticleSystem_Solution
 
 ### Citations
 
