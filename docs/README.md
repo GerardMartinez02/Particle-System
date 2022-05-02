@@ -84,6 +84,48 @@ bool ModuleParticles::Start()
 }
 ```
 
+Thirdly, we have to take into account the iteration for all the created particles that we must do in the update. To later destroy those that have already reached their time limitation taking into account the frames
+
+```
+bool ModuleParticles::Update(float dt)
+{
+	for(uint i = 0; i < MAX_ACTIVE_PARTICLES; ++i)
+	{
+		Particle* particle = particles[i];
+
+		if(particle == nullptr)	continue;
+
+		// Call particle Update. If it has reached its lifetime, destroy it
+		if(particle->Update() == false)
+		{
+			delete particle;
+			particles[i] = nullptr;
+		}
+	}
+
+	return true;
+}
+```
+
+On the other hand, we would have to do the same iteration for the whole array of particles to draw them on the screen in case the particle is active.
+
+```
+bool ModuleParticles::PostUpdate()
+{
+	for (uint i = 0; i < MAX_ACTIVE_PARTICLES; ++i)
+	{
+		Particle* particle = particles[i];
+
+		if (particle != nullptr && particle->isAlive)
+		{
+			app->render->DrawTexture(texture, particle->position.x, particle->position.y, &(particle->anim.GetCurrentFrame()));
+		}
+	}
+
+	return true;
+}
+```
+
 ### Citations
 
 Information and images:
