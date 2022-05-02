@@ -177,6 +177,8 @@ Information and images for the examples:
 
 - [https://blog.udemy.com/how-to-make-a-2d-game-in-unity/](https://blog.udemy.com/how-to-make-a-2d-game-in-unity/)
 
+- [https://nintervik.github.io/2D-Particle-System/#2-what-is-a-particle-system-and-why-do-we-care](https://nintervik.github.io/2D-Particle-System/#2-what-is-a-particle-system-and-why-do-we-care)
+
 - [https://www.pinterest.es/pin/609745237032901237/](https://www.pinterest.es/pin/609745237032901237/)
 
 Support library that has served to implement the code:
