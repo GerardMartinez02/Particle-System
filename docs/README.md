@@ -174,7 +174,9 @@ https://github.com/GerardMartinez02/Particle-System/tree/main/ParticleSystem_Sol
 Information and images:
 
 - https://answers.unity.com/questions/1785183/how-to-make-3-bullets-fire-at-different-angles.html
+
 - https://blog.udemy.com/how-to-make-a-2d-game-in-unity/
+
 - https://www.pinterest.es/pin/609745237032901237/
 
 Support library that has served to implement the code:
