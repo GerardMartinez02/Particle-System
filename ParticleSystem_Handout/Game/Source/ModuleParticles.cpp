@@ -20,15 +20,15 @@ ModuleParticles::ModuleParticles()
 	explosion.anim.PushBack({ 419, 296, 33, 30 });
 	explosion.anim.PushBack({ 457, 296, 33, 30 });
 	explosion.anim.loop = false;
-	explosion.anim.speed = 0.3f;
+	explosion.anim.speed = 0.005f;
 
 	// Laser Particle
 	laser.anim.PushBack({ 104, 171, 80, 14 });
 	laser.anim.PushBack({ 185, 170, 80, 16 });
 	laser.speed = iPoint(1, 0);
-	laser.lifetime = 500;
+	laser.lifetime = 900;
 	laser.anim.loop = true;
-	laser.anim.speed = 0.3f;
+	laser.anim.speed = 0.001f;
 }
 
 ModuleParticles::~ModuleParticles()
