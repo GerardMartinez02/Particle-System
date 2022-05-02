@@ -30,7 +30,7 @@ https://gerardmartinez02.github.io/Particle-System/
 
 ## Source
 
-- SDL
+- [SDL](https://www.libsdl.org/projects/SDL/)
 
 ## License
 
