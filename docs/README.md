@@ -34,7 +34,55 @@ Finally we see how there are particles that can be destroyed without having an i
 For this personal research I have developed some basic particles such as a Bullet and a Explosion in order to visualize its creation and its different characteristics. 
 The interaction of particles with external objects such as a collision has not been taken into account since we are talking about a base particle system. As I said, this are easy particles to implement that work perfectly and that can be used as a basis for future projects.
 
+First of all, we must take into account the creation of the particles and the implementation of their variables, such as position, animation, speed and lifetime
+```
+void ModuleParticles::AddParticle(const Particle& particle, int x, int y, uint delay)
+{
+	Particle* p = new Particle(particle);
+				
+	p->position.x = x;						
+	p->position.y = y;						
 
+	particles[lastParticle++] = p;
+	lastParticle %= MAX_ACTIVE_PARTICLES;
+}
+```
+
+In addition to taking into account the initialization of these with their respective animation
+
+```
+ModuleParticles::ModuleParticles()
+{
+	for(uint i = 0; i < MAX_ACTIVE_PARTICLES; ++i)
+		particles[i] = nullptr;
+
+	// Explosion Particle
+	explosion.anim.PushBack({ 274, 296, 33, 30 });
+	explosion.anim.PushBack({ 313, 296, 33, 30 });
+	explosion.anim.PushBack({ 346, 296, 33, 30 });
+	explosion.anim.PushBack({ 382, 296, 33, 30 });
+	explosion.anim.PushBack({ 419, 296, 33, 30 });
+	explosion.anim.PushBack({ 457, 296, 33, 30 });
+	explosion.anim.loop = false;
+	explosion.anim.speed = 0.3f;
+
+	// Laser Particle
+	laser.anim.PushBack({ 104, 171, 80, 14 });
+	laser.anim.PushBack({ 185, 170, 80, 16 });
+	laser.speed = iPoint(1, 0);
+	laser.lifetime = 500;
+	laser.anim.loop = true;
+	laser.anim.speed = 0.3f;
+}
+
+bool ModuleParticles::Start()
+{
+	LOG("Loading particles");
+	texture = app->tex->Load("Assets/Textures/particles.png");
+	
+	return true;
+}
+```
 
 ### Citations
 
