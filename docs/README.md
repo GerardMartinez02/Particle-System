@@ -75,6 +75,11 @@ ModuleParticles::ModuleParticles()
 	laser.anim.speed = 0.3f;
 }
 
+ModuleParticles::~ModuleParticles()
+{
+	
+}
+
 bool ModuleParticles::Start()
 {
 	LOG("Loading particles");
@@ -107,7 +112,7 @@ bool ModuleParticles::Update(float dt)
 }
 ```
 
-On the other hand, we would have to do the same iteration for the whole array of particles to draw them on the screen in case the particle is active.
+On the other hand, we will have to do the same iteration for the whole array of particles to draw them on the screen in case the particle is active.
 
 ```
 bool ModuleParticles::PostUpdate()
@@ -122,6 +127,27 @@ bool ModuleParticles::PostUpdate()
 		}
 	}
 
+	return true;
+}
+```
+Finally, we will have to change the file of our code and go to the Scene cpp, once inside we will have to implement the logic so that the particles are reflected on the screen once the action has been carried out
+
+
+
+```
+bool Scene::Update(float dt)
+{
+	if (app->input->GetKey(SDL_SCANCODE_1) == KEY_DOWN)
+	{
+		app->moduleParticles->AddParticle(app->moduleParticles->laser, 300, 400, 0);
+
+	}
+
+	if (app->input->GetKey(SDL_SCANCODE_2) == KEY_DOWN)
+	{
+		app->moduleParticles->AddParticle(app->moduleParticles->explosion, 300, 400, 0);
+	}
+		
 	return true;
 }
 ```
