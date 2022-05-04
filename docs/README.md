@@ -187,4 +187,4 @@ Support library that has served to implement the code:
 
 Template used for the module:
 
-- [Code template used as a base for this Audio and music manager construction](https://github.com/raysan5/game_project_template)
+- [Code template used as a base for this Particle System project](https://github.com/raysan5/game_project_template)
